@@ -1,13 +1,21 @@
-import '../styles/index.scss'
+import { Link, Outlet } from 'react-router-dom';
+
+import '../styles/index.scss';
 
 function App() {
 
   return (
     <div>
-      hello
-      <div className="oi">hello2</div>
+      <nav className="navbar">
+        <h2>
+          <Link to="/">Home</Link>
+        </h2>
+        <Link to="/movie/1">Movie</Link>
+        <Link to="/search">Search</Link>
+      </nav>
+      <Outlet />
     </div>
   )
-}
+};
 
-export default App
+export default App;
