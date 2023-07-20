@@ -1,0 +1,16 @@
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    input {
+        padding: 12px 10px;
+
+        &:focus { outline: none }
+    }
+
+    svg {
+        padding: 12px 10px
+    }
+}

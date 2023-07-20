@@ -3,4 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    outline-color: #B8930C;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: #FFF;
+}
+
+a {
+    color: #F7D354;
+    transition: .5s;
+
+    &:hover {
+        color: #B8930C;
+    }
 }

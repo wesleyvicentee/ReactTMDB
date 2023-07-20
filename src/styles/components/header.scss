@@ -1,0 +1,14 @@
+.header {
+    height: 80px;
+    border-bottom: 1px solid #EEE;
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1080px;
+        height: 80px;
+        margin: auto;
+        padding: 0 20px;
+    }
+}
