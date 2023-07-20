@@ -1,0 +1,11 @@
+.main-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 50px 20px;
+
+    .container-movies {
+        displaY: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
