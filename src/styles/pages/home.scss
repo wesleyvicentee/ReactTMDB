@@ -2,6 +2,12 @@
     max-width: 1080px;
     margin: auto;
     padding: 50px 20px;
+    
+    h1 {
+        margin-bottom: 40px;
+        font-size: 32px;
+        font-weight: 500;
+    }
 
     .container-movies {
         displaY: flex;

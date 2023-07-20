@@ -1,8 +1,40 @@
 .movie-card {
-    width: 300px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 325px;
+    padding: 16px;
+    margin-bottom: 24px;
+    background-color: #111;
+    border-radius:  6px;
 
     img {
+        display: block;
         width: 100%;
+        margin-bottom: 16px;
+        border-radius: 6px;
+    }
+
+    h2,
+    p { margin-bottom: 16px; }
+
+    svg {
+        color: #f7d354;
+    }
+
+    a {
+        display: block;
+        padding: 16px;
+        border: 2px solid #f7d354;
+        border-radius: 6px;
+        background-color: #f7d354;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+
+        &:hover {
+            background-color: transparent;
+            color: #f7d354;
+        }
     }
 }
