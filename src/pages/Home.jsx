@@ -23,7 +23,7 @@ const Home = () => {
 
         getTopRatedMovies(topRatedUrl);
 
-    }, [])
+    }, []);
 
     return (
         <main className="main-container">

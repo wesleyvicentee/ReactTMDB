@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { FaStar } from "react-icons/fa"
+import { FaStar } from "react-icons/fa";
 
-import "../styles/components/movie-card.scss"
+import "../styles/components/movie-card.scss";
 
 const imageUrl = import.meta.env.VITE_IMG;
 
@@ -16,6 +16,6 @@ const MovieCard = ({ movie, showLink = true }) => {
             {showLink && <Link to={`/movie/${movie.id}`}>Detalhes</Link>}
         </div>
     )
-}
+};
 
-export default MovieCard
+export default MovieCard;

@@ -1,6 +1,6 @@
-import { BiCameraMovie } from "react-icons/bi"
+import { BiCameraMovie } from "react-icons/bi";
 
-import '../styles/components/logo.scss'
+import '../styles/components/logo.scss';
 
 const Logo = () => {
     return (
@@ -9,6 +9,6 @@ const Logo = () => {
             BestMovies
         </div>
     )
-}
+};
 
-export default Logo
+export default Logo;

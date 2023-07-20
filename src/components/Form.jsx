@@ -1,6 +1,7 @@
-import { BiSearchAlt2 } from "react-icons/bi"
+import { useState } from "react";
+import { BiSearchAlt2 } from "react-icons/bi";
 
-import '../styles/components/search-form.scss'
+import '../styles/components/search-form.scss';
 
 const Form = () => {
     return (
@@ -11,6 +12,6 @@ const Form = () => {
             </button>
         </form>
     )
-}
+};
 
-export default Form
+export default Form;

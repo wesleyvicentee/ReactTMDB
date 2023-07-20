@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import App from './App.jsx';
-import Home from './pages/Home.jsx'
-import Movie from './pages/Movie.jsx'
-import Search from './pages/Search.jsx'
+import Home from './pages/Home.jsx';
+import Movie from './pages/Movie.jsx';
+import Search from './pages/Search.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,4 +19,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
-)
+);

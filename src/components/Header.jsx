@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Form from "./Form";
 import Logo from "./Logo";
 
-import '../styles/components/header.scss'
+import '../styles/components/header.scss';
 
 const Header = () => {
     return (
@@ -15,6 +15,6 @@ const Header = () => {
             </nav>
         </header>
     )
-}
+};
 
-export default Header
+export default Header;
