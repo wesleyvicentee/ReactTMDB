@@ -32,28 +32,77 @@ const Movie = () => {
         setMovie(data);
 
         setLoading(false);
-    }
+
+    };
 
     useEffect(() => {
 
         const movieUrl = `${moviesAPI}${id}?${apiKey}`
 
         getMovie(movieUrl)
-    }, [])
+
+    }, []);
+
+    const formatCurrency =  (number) => {
+
+        const val =  number.toLocaleString("en-US", {
+            style: "currency",
+            currency: "USD"
+        });
+        return val;
+    }
+
+    const budget = movie?.budget || 0;
+    const revenue = movie?.revenue || 0;
+
+    const movieInfos = [
+        {
+            id: 1,
+            title: 'Orçamento',
+            icon: <BsWallet2 />,
+            infoValue: formatCurrency(budget)
+        },
+        {
+            id: 2,
+            title: 'Receita',
+            icon: <BsGraphUp />,
+            infoValue: formatCurrency(revenue)
+        },
+        {
+            id: 3,
+            title: 'Duração',
+            icon: <BsHourglassSplit /> ,
+            infoValue: `${movie?.runtime} minutos`
+        },
+        {
+            id: 4,
+            title: 'Descrição',
+            icon: <BsFillFileEarmarkTextFill />,
+            infoValue: movie?.overview
+        }
+    ]
 
     return (
         <div className="main-container">
-            {loading ? <p>carregando...</p> : <>
+
+            {loading ? <p>carregando...</p> :
+                <>
             
-                <MovieCard movie={movie}/>
+                    <MovieCard movie={movie}/>
 
-                <MovieInfos movie={movie} title="Receita"/>
-
-            </>}
-
+                    { movieInfos.map((icon) => 
+                        <MovieInfos
+                            title={icon.title}
+                            icon={icon.icon}
+                            value={icon.infoValue}
+                            key={icon.id}
+                        />)
+                    }
+                </>
+            }
 
         </div>
-    )
-}
+    );
+};
 
-export default Movie
+export default Movie;

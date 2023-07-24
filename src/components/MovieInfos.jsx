@@ -5,13 +5,13 @@ import {
     BsFillFileEarmarkTextFill
 } from "react-icons/bs";
 
-const MovieInfos = ({ movie, title }) => {
+const MovieInfos = ({ title, icon, value }) => {
     return (
         <div>
             <h3>
-                <BsGraphUp /> Receita:
+                {icon} {title}:
             </h3>
-            <p>{movie?.revenue}</p>
+            <p>{value}</p>
         </div>
     )
 };
